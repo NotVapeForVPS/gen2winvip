@@ -1,0 +1,95 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, red, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Titre */
+.title {
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 200px;
+}
+
+/* Triangle */
+.triangle-container {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    position: absolute;
+    padding: 20px 30px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Positions des boutons */
+.discord {
+    left: 0;
+    bottom: 100px;
+}
+
+.shop {
+    right: 0;
+    bottom: 100px;
+}
+
+.gen2win {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Effets de survol */
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        font-size: 4em;
+        margin-bottom: 150px;
+    }
+
+    .triangle-container {
+        width: 250px;
+        height: 220px;
+    }
+
+    .button {
+        font-size: 1.2em;
+        padding: 15px 20px;
+    }
+}
